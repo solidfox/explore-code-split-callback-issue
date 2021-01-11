@@ -15,7 +15,6 @@
     (gdom/append app button)
     (events/listen button EventType.CLICK
                    (fn [e]
-                     (.beforeLoadModuleCode loader/*module-manager* (loader/munge-kw :bar))
                      (loader/load :bar
                                   (fn []
                                     (js/console.log "TESTSON")
@@ -23,7 +22,7 @@
                                     ((resolve 'bar.core/woz))))))))
 
 (defonce init (listen-to-button))
-
+ 
 (loader/set-loaded! :foo)
-
+ 
  

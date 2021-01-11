@@ -1,4 +1,4 @@
 {:aliases {:default {:override-deps {org.clojure/clojurescript {:git/url "https://github.com/solidfox/clojurescript.git"
-                                                                :sha     "32826d730eadfc16fac0b6f5bc4646c04a7a7551"}}}}
+                                                                :sha     "b05e97788d90d6f34becc3e43cf6f66feaa5e7ca"}}}}
  :deps {com.bhauman/figwheel-main {:mvn/version "0.2.12"}}
  :paths ["src" "resources" "target"]}

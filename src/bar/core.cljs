@@ -11,7 +11,6 @@
   :modules module definition. Will mark all parent modules as also being
   loaded."
   [module-name]
-  (.setLoaded loader/*module-manager* (loader/munge-kw module-name))
   (loader/set-loaded! module-name))
 
 (set-loaded! :bar)
